@@ -1,0 +1,64 @@
+.list{
+    margin-top: 10px;
+    margin-bottom: 80px;
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+}
+.list table{
+    width: 100%;
+    border-radius: 5px;
+}
+table, th, td {
+    color: white;
+    border: 1px solid silver;
+    border-collapse: collapse;
+    background: #1e272e;
+  }
+  th{
+      font-size: 1.3rem;
+  }
+table p{
+    font-size: 1.3rem;
+    color: silver;
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+.delete-icon{
+    color: red;
+}
+.update-icon{
+    color: green;
+}
+tr .op{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn{
+    margin:0 !important;
+    padding: none !important;
+}
+@media screen and (max-width:750px){
+    .list{
+        width: 98%;
+        position: relative;
+    }
+    table,th,td{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:500px){
+    table,th,td{
+        font-size: .8rem;
+    }
+    .delete-icon,.update-icon{
+        font-size: 1.1rem !important;
+    }
+    
+}
